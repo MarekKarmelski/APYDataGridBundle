@@ -303,6 +303,7 @@ class Grid implements GridInterface
      */
     public function __construct($container, $id = '', GridConfigInterface $config = null)
     {
+        // @todo: why the whole container is injected?
         $this->container = $container;
         $this->config = $config;
 
